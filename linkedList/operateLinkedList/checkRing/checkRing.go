@@ -85,9 +85,6 @@ func (list List) Traverse() {
 
 
 //快慢指针法
-/**
- * 思想参考：https://blog.csdn.net/wanf425/article/details/83048761
-*/
 
 func (list List) CheckRing() bool {
 	if list.headNode == nil {

@@ -50,7 +50,6 @@ func (list *List) Traverse() {
 	}
 }
 
-//参考：https://www.cnblogs.com/byrhuangqiang/p/4311336.html
 //单链表反转：就地反转法
 func (list *List) ReverseList() {
 	if list.headNode == nil {

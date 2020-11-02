@@ -48,7 +48,6 @@ func (list List) Traverse() {
 }
 
 //方法一：常规方法合并链表
-//解题思路：https://juejin.im/post/6844903855965077518
 func (list *List) MergeLinkedList(list1 List, list2 List) {
 	if list1.HeadNode == nil && list2.HeadNode == nil {
 		fmt.Println("两个链表均为空")
@@ -93,7 +92,6 @@ func (list *List) MergeLinkedList(list1 List, list2 List) {
 }
 
 //方法二：通过递归的方法合并链表
-//解题思路：https://juejin.im/post/6844903855965077518
 func RecursionMergeList(head1 *Node, head2 *Node) *Node {
 	newNode := &Node{}
 	if head1 == nil {
