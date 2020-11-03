@@ -1,7 +1,7 @@
 package main
 
 import (
-	"data-struct-by-go/queue/step"
+	"data-struct-by-go/recursion/step"
 	"fmt"
 )
 

@@ -23,7 +23,7 @@ func Step(n int) int {
 	if mapList[n] != 0 {
 		return mapList[n]
 	}
-	res := Step(n-1)+Step(n-2)
+	res := Step(n-1)+ Step(n-2)
 	mapList[n] = res
 	fmt.Printf("step(%d) = %d", n, mapList[n])
 	fmt.Println()
