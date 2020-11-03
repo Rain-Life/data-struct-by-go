@@ -2,7 +2,7 @@ package insertSort
 
 import "fmt"
 
-func insertSort(arr []int)  {
+func InsertSort(arr []int)  {
 	if len(arr) <= 0 {
 		fmt.Println("待排数据不合法")
 	}
@@ -19,5 +19,9 @@ func insertSort(arr []int)  {
 			}
 		}
 		arr[j+1] = value
+	}
+
+	for _, v := range arr {
+		fmt.Printf("%v\t", v)
 	}
 }
