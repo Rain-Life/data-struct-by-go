@@ -2,8 +2,6 @@ package linkListStack
 
 import "fmt"
 
-//链式栈：https://blog.csdn.net/guidao13/article/details/84594728
-
 type Item interface {}
 
 type Node struct {

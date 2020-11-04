@@ -2,8 +2,6 @@ package arrayStack
 
 import "fmt"
 
-//顺序栈：https://blog.csdn.net/afar_ch/article/details/81153183
-
 type Item interface {}
 
 type ItemStack struct {
