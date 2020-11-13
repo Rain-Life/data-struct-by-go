@@ -5,17 +5,17 @@ func QuickSort(arr []int, start int, end int) {
 		return
 	}
 
-	position := partition(arr, start, end)
-	QuickSort(arr, start, position-1)
-	QuickSort(arr, position+1, end)
+	pivot := partition(arr, start, end)
+	QuickSort(arr, start, pivot-1)
+	QuickSort(arr, pivot+1, end)
 }
 
 
 func partition(arr []int, start int, end int) int {
-	pivot := arr[end]
+	pivotValue := arr[end]
 	i := start
 	for j:=start;j < end;j++ {
-		if arr[j] < pivot {
+		if arr[j] < pivotValue {
 			arr[i], arr[j] = arr[j],arr[i]
 			i++
 		}
