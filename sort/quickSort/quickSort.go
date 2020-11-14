@@ -13,7 +13,6 @@ func QuickSort(arr []int, start int, end int) {
 
 func partition(arr []int, start int, end int) int {
 	pivotValue := arr[end]
-	//fmt.Println(pivotValue)
 	i := start
 	for j:=start;j < end;j++ {
 		if arr[j] < pivotValue {
