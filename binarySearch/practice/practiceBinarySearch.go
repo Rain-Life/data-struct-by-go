@@ -123,7 +123,7 @@ func SolutionSqrt(num float64, precision float64) float64 {
 	return Sqrt(num, low, high, precision)
 }
 
-func Sqrt(num float64, low float64, high float64, precision float64) int {
+func Sqrt(num float64, low float64, high float64, precision float64) float64 {
 	mid := (low+high) / 2
 
 	if num - (mid * mid) < 0 {
@@ -133,6 +133,6 @@ func Sqrt(num float64, low float64, high float64, precision float64) int {
 			return Sqrt(num, (low + mid)/2, high, precision)
 		}
 
-		return mid.(int)
+		return mid
 	}
 }
