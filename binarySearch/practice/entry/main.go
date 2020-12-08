@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	sqrt := practice.SolutionSqrt(8, 0.000001)
+	sqrt := practice.SolutionSqrt(7, 0.000001)
 	fmt.Printf("%.6f", sqrt)
-
 	//arr := []int{1,3,8,8,8,10,13}
 	////查找第一个值等于给定值的元素
 	//positionFirst := practice.BinarySearchFirst(arr, 8)
