@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
+	//对于10w个url，实战场景中可以通过读取文件来获取，假设url平均长度为50，
+	//10w个url也就不到5M，完全可以读取到内存中进行处理
 	urls := []string{
 		"http://www.baidu.com/1",
 		"http://www.baidu.com/2",
