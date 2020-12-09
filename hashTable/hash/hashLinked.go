@@ -6,9 +6,7 @@ import (
 )
 
 //实现hash表，并通过链表法处理散列冲突
-const SIZE = 1000 //散列表大小
-
-type Object interface {}
+const SIZE = 100 //散列表大小
 
 //定义实际存储数据的结构体
 type Data struct {
@@ -36,7 +34,6 @@ func (hashTable *HashTable) InsertHashTable(data *Data) {
 	//随机生成一个键值，然后生成哈希值
 	//rand.Int31() int32  [0, MaxInt32]
 	hashKey := hashTable.HashFun(rand.Int31())
-
 	//将数据插入到对应槽后边的链表中(真正的插入数据是在这一步)
 	hashTable.LinkedArr[hashKey].InsertDataLinked(data)
 }
@@ -51,17 +48,11 @@ func (dataLinked *DataLinked) InsertDataLinked(data *Data) {
 		return
 	}
 
-	pre := new(Data)//辅助指针，方便插入操作
 	//存在散列冲突
-	for currentNode != nil {
-		//保证链表中值顺序插入
-		if data.Value > currentNode.Value {
-			pre.Next = data
-			data.Next = currentNode
-		}
-		pre = currentNode
+	for currentNode.Next != nil {
 		currentNode = currentNode.Next
 	}
+	currentNode.Next = data
 }
 
 //根据键值及Value查询对应的数据
@@ -89,7 +80,7 @@ func (dataLinked *DataLinked) FindLinkedByValue(value int) *Data {
 }
 
 //展示某一个槽的值（链表）
-func (dataLinked *DataLinked) ShowDataLinked(hashKey int) {
+func (dataLinked *DataLinked) ShowDataLinked(hashKey int32) {
 	if dataLinked.Head == nil {
 		fmt.Printf("槽%d 为空\n", hashKey)
 		return
@@ -106,6 +97,6 @@ func (dataLinked *DataLinked) ShowDataLinked(hashKey int) {
 //打印散列表
 func (hashTable *HashTable) ShowHashTable() {
 	for i:=0; i < len(hashTable.LinkedArr); i++ {
-		hashTable.LinkedArr[i].ShowDataLinked(i)
+		hashTable.LinkedArr[i].ShowDataLinked(int32(i))
 	}
 }
