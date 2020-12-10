@@ -131,4 +131,6 @@
 * 动态规划
 
 
+每一个数据结构都有沉淀文章，如果对你有帮助，别忘了给个star和关注哦
+
 ![image](https://github.com/Rain-Life/data-struct-by-go/blob/master/photos/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg)
