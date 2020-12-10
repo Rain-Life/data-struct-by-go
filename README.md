@@ -129,3 +129,6 @@
 * 回溯算法
 * 贪心算法
 * 动态规划
+
+
+![image](https://github.com/Rain-Life/data-struct-by-go/blob/master/photos/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg)
