@@ -15,25 +15,24 @@
 * 看经典的数据结构和算法书、看专栏、看高质量的文章
 * 刷题（并不是大量的盲目刷题，刷真实的场景题及经典题）
 * 如果有现阶段也打算学习数据结构和算法的兄弟，一起讨论学习是很不错的
-* 沉淀（文章输出、代码实现）
 
 #### 第一阶段
 该阶段涉及到的数据结构必须达到可以轻松实现。这些都是后边复杂数据结构及算法的基础
 
-* 时间复杂度和空间复杂度
+* [时间复杂度和空间复杂度](https://mp.weixin.qq.com/s?__biz=MzU5MjA1MzcyMA==&mid=2247484405&idx=1&sn=30f2ae319ca0e7b10e821f6cd76bb5f0&chksm=fe24d742c9535e54316013decdc9ea9da239b816d372d270f8eb1b7c8ca3770fd5a0dcd40275&token=1596559759&lang=zh_CN#rd)
    * 时间复杂度分析
    * 空间复杂度分析
-* 数组
+* [数组](https://mp.weixin.qq.com/s?__biz=MzU5MjA1MzcyMA==&mid=2247484982&idx=1&sn=1b7b2c50c5bce6c4eaaf04b9d7d7ce50&chksm=fe24d281c9535b97f34a68dbd8875d9f58bad917a7f21e114f78486e76d5a18a903d254be8a0&token=1596559759&lang=zh_CN#rd)
    * 数据移动
    * 数组扩容（数据搬移）
-* 栈
+* [栈](https://github.com/Rain-Life/data-struct-by-go/tree/master/stack)
    * 顺序栈
    * 链式栈
-* 队列
+* [队列](https://github.com/Rain-Life/data-struct-by-go/tree/master/queue)
    * 顺序队列
    * 链式队列
    * 循环队列
-* 链表
+* [链表](https://github.com/Rain-Life/data-struct-by-go/tree/master/linkedList)
    * 单链表（增删改查、遍历）
    * 循环链表
    * 双向链表
@@ -41,14 +40,14 @@
    * 单链表反转
    * 循环链表环的检测
    * 单链表合并
-* 递归
+* [递归](https://github.com/Rain-Life/data-struct-by-go/tree/master/recursion/step)
    * 递归思想
    * 递归时间复杂度分析 
-* 排序
+* [排序](https://github.com/Rain-Life/data-struct-by-go/tree/master/sort)
    * O(n^2)：冒泡排序、插入排序、选择排序
    * O(nlogn)：快速排序、归并排序
    * O(n)：桶排序、计数排序、计数排序（跳过就行）
-* 二分查找
+* [二分查找](https://github.com/Rain-Life/data-struct-by-go/tree/master/binarySearch)
    * 非递归实现
    * 递归实现
    * 递归实现查找第一个值等于给定值的元素
@@ -57,10 +56,10 @@
 #### 第二阶段
 加粗部分的，在该阶段应该做到能够熟练实现，未加粗部分的在该阶段能看懂就可以
 
-* 跳表
+* [跳表](https://mp.weixin.qq.com/s?__biz=MzU5MjA1MzcyMA==&mid=2247485195&idx=1&sn=d44e1cbf26cd9c53578f721b0db3f74e&chksm=fe24d3bcc9535aaab2e278edb4709a4c4e5d2da932a50b7f59c63121a072b4f9c078aa030239&token=1596559759&lang=zh_CN#rd)
    * 跳表基本操作
    * 跳表动态更新
-* **散列表**
+* **[散列表](https://github.com/Rain-Life/data-struct-by-go/tree/master/hashTable)**
    * 散列冲突
    * 散列表扩容
    * 散列表应用（LRU缓存淘汰算法、Redis有序集合实现）
@@ -130,4 +129,3 @@
 * 回溯算法
 * 贪心算法
 * 动态规划
-
